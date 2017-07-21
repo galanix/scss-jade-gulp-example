@@ -1,0 +1,26 @@
+- var link = 'active';
+footer.footer
+	.container
+		.footer__logo
+			img(src='img/logo-footer.png')
+		.footer__menu
+			.nav-mobile(style="display:none;")
+			#bs-example-navbar-collapse-1.collapse.navbar-collapse
+				ul.nav.navbar-nav
+					li.nav__item
+						a.nav__link.nav__link--footer(href='teams.html') Список
+					li.nav__item
+						a.nav__link.nav__link--footer(href='#') Ссылка 2
+					li.nav__item
+						a.nav__link.nav__link--footer(href='#') Ссылка 3
+					li.nav__item
+						a.nav__link.nav__link--footer(href='#') Ссылка 4
+					li.nav__item
+						a.nav__link.nav__link--footer(href='news.html') Ссылка 5
+					li.nav__item
+						a.nav__link.nav__link--footer(class="#{link}", href='contacts.html') Ссылка 6
+			.footer__copy Galanix IT ©, 2017
+		.footer__contacts
+			.footer__contacts-phone 8 800 111 22 33
+			.footer__contacts-adress Киев
+			a(href="#").footer__contacts-mail galanix@gmail.com

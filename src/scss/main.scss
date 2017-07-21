@@ -1,0 +1,30 @@
+// @import '../../node_modules/normalize.css/normalize';
+
+@import 'utils/variables';
+
+@import 'base/fonts';
+
+@import 'utils/mixins';
+@import 'utils/helpers';
+// @import 'utils/sprites';
+
+@import 'base/base';
+
+@import 'vendor/bootstrap';
+@import 'vendor/vendor';
+
+
+// Desktop styles
+@import 'concat-scss/layout.desktop.scss';
+@import 'concat-scss/components.desktop.scss';
+
+// Tablet styles
+@import 'concat-scss/layout.tablet.scss';
+@import 'concat-scss/components.tablet.scss';
+
+// Mobile styles
+@import 'concat-scss/layout.mobile.scss';
+@import 'concat-scss/components.mobile.scss';
+
+
+// @import 'base/print';

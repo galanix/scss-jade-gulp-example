@@ -1,0 +1,20 @@
+.clearfix {
+    @include clearfix;
+}
+
+img.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.list-inline {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    li {
+        display: inline-block;
+        vertical-align: top;
+    }
+}

@@ -1,0 +1,25 @@
+- var link = 'active';
+header.header
+	nav.navbar.navbar-default
+		.container
+			.navbar-header
+				a.logo(href='index.html') 
+					img(src='img/logo.png')
+			#navbar.collapse.navbar-collapse
+				ul.nav.navbar-nav
+					li.nav__item
+						a.nav__link(href='teams.html') Список
+					li.nav__item
+						a.nav__link(href='#') Ссылка 2
+					li.nav__item
+						a.nav__link(href='#') Ссылка 3
+					li.nav__item
+						a.nav__link(href='#') Ссылка 4
+					li.nav__item
+						a.nav__link(href='#') Ссылка 5
+					li.nav__item
+						a.nav__link(class="#", href='contacts.html') Ссылка 6
+			.nav-mobile(style="display:none;")
+			#nav-right
+				.phone 8 800 888 88 88
+				a(href="#").login Войти

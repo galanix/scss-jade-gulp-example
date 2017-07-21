@@ -1,0 +1,20 @@
+// https://github.com/ai/evil-front/blob/master/evil-front/lib/assets/stylesheets/evil-front/sticky-footer.sass
+
+@mixin sticky-footer($height, $footer: unquote(".footer"))
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        margin-bottom: $height;
+    }
+
+    #{$footer} {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: $height;
+        width: 100%;
+    }

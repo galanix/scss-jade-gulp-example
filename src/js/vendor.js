@@ -1,0 +1,1 @@
+@@include('vendor/slick.min.js');

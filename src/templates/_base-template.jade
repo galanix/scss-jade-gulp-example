@@ -1,0 +1,53 @@
+doctype
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        block head
+            title= pageTitle || ''
+            meta(name='description' content=pageDescription || '')
+        meta(name="keywords" content="")
+        meta(name="copyright" content="")
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        meta(name="HandheldFriendly" content="True")
+        meta(http-equiv="cleartype" content="on")
+        meta(name='theme-color', content='#ffffff')
+
+        block styles
+            link(href='css/main.css' rel='stylesheet')
+
+        block scripts-head
+
+        //- <!--[if lte IE 9]>
+        //- link(href='css/legacy.css' rel='stylesheet')
+        //- script(src='js/legacy.js')
+        //- <![endif]-->
+    body
+        <!--[if lte IE 9]>
+        p.browser-upgrade Вы используете <strong>УСТАРЕВШИЙ</strong> браузер. Данная версия браузера не поддерживает многие современные технологии, из-за чего многие страницы отображаются некорректно, а главное — на сайтах могут работать не все функции. Поэтому мы предлагаем Вам использовать более современные браузеры. Все они бесплатны, легко устанавливаются и просты в использовании: <a href="http://browsehappy.com/?locale=ru_ru" title="Browse Happy">посмотреть список современных браузеров</a>.
+        <![endif]-->
+
+        .svg-placeholder(style="height: 0; width: 0; position: absolute; visibility: hidden")
+        include _header
+
+        block content
+        include _footer
+
+        block scripts-body
+            script(src='js/jquery-1.12.4.min.js')
+            script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.js')
+
+            script(src='https://www.youtube.com/iframe_api')
+
+            script(src='js/vendor.js')
+            script(src='js/app.js')
+
+        block scripts-page
+
+        .popup__overlay
+
+
+
+//- https://github.com/joshbuchea/HEAD - обо всех элементах внутри head
+//- https://bitsofco.de/all-about-favicons-and-touch-icons - о favicon

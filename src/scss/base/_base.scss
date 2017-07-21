@@ -1,0 +1,309 @@
+html {
+    // https://css-tricks.com/box-sizing
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    // https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer
+    // Решение для футера, всегда приклеенного к низу, для этого блоку с основным содержимым 
+    // между header и footer задаётся flex-grow: 1, в данном случае это элемент main
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family:  $g-font-family;
+    font-size: $g-font-size;
+    line-height: $g-line-height;
+    letter-spacing: $g-lsp;
+    margin:0;
+}
+
+img {
+    box-sizing: content-box;
+}
+
+// Forms
+input,
+select,
+textarea {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+input {
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+    appearance: none;
+
+    &:hover,
+    &:focus {
+        
+    }
+}
+input[type="text"]::-webkit-input-placeholder {color:#fff;}
+input[type="text"]::-moz-placeholder          {color:#fff;}
+input[type="text"]:-moz-placeholder           {color:#fff;}
+input[type="text"]:-ms-input-placeholder      {color:#fff;}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+main {
+    flex-grow: 1;
+}
+
+// https://css-tricks.com/cascading-svg-fill-color
+svg {
+    fill: currentColor;
+}
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-initialized .slick-slide:focus {
+    outline: none;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.btn.dropdown-toggle.btn-default {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Avenir';
+}
+select.bs-select-hidden, select.selectpicker {
+    display: none!important;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.open>.dropdown-menu {
+    display: block;
+}
+input[type="email"], input[type="text"], input[type="password"], input[type="search"] {
+    font-family: 'Avenir';
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 154px;
+    display: inline-block;
+    position: relative;
+    outline: none;
+}
+.slick-arrow.slick-disabled {
+    opacity: 0.5;
+}
+.slick-arrow {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: transparent;
+    position: absolute;
+    cursor: pointer;
+    &:focus {
+        outline:none;
+    }
+}
+.slick-prev.slick-arrow {
+    margin-top: 0;
+    background-image: url(../img/arr-left.png);
+    width: 23px;
+    height: 50px;
+    left: -38px;
+    top: 287px;
+}
+.slick-next.slick-arrow {
+    margin-top: 0;
+    background-image: url(../img/arr-right.png);
+    width: 23px;
+    height: 50px;
+    right: -38px;
+    top: 287px;
+}
+.bootstrap-select.btn-group .dropdown-menu.inner {
+    position: static;
+    float: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+    outline: 0;
+}
+.bootstrap-select.btn-group .dropdown-menu li {
+    position: relative;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.bootstrap-select.btn-group .dropdown-menu li a {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn-group.bootstrap-select:last-child {
+    margin: 0 0 0 45px;
+}
+.btn-group.bootstrap-select:focus {
+    outline: none;
+}

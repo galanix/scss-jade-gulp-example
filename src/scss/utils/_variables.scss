@@ -1,0 +1,66 @@
+// Mobile First media queries
+$mq-tablet: "only all and (min-width: 768px)";
+$mq-desktop: "only all and (min-width: 1200px)";
+
+// Standard media queries
+//$mq-mobile: "only or and (max-width: 767px)";
+//$mq-tablet: "only all and (max-width: 1199px)";
+
+
+// Borders
+$g-color-border: #abb2b5;
+
+
+// Colors
+$g-color-primary: #5dca88;
+$g-color-secondary: ;
+
+$g-color-white: #fff;
+
+$g-color-icon: #9fa9a9;
+$g-color-text: #747a7a;
+$g-color-text-dark: #636c6c;
+$g-color-text-light: #afb8b8;
+$g-color-text-hover: #3c3d42;
+
+$c-social-item-bg: #5d6461;
+
+$c-color-tabs-border: #dbe2e2;
+
+
+// Dimensions
+$g-font-size: ;
+$g-font-size-title: ;
+$g-font-size-subtitle: ;
+$g-line-height: ;
+
+
+// Fonts
+$g-font-family: ;
+$g-font-family-bold: ;
+
+// Letter-spacing
+$g-lsp: ;
+
+// Header
+$c-header-bg: ;
+
+// Footer
+$c-footer: #8c9494;
+$c-footer-bg: #2d312f;
+
+// Nav
+$c-nav-link: ;
+
+// from LoVe to HAte
+$c-link: ;
+$c-link-visited: ;
+$c-link-hover: ;
+$c-link-active: ;
+
+$c-link-button: ;
+$c-link-button-bg: ;
+$c-link-button-bg-hover: ;
+
+// Transitions
+$g-transition-duration: 0.3s;

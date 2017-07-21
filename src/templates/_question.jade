@@ -1,0 +1,13 @@
+.callback__contacts
+    .container
+        .row
+            .col-xs-3.col-sm-2.callback__contacts__ico
+                img(src='img/callback-ico.png')
+            .col-xs-9.col-sm-4.callback__contacts__text  У вас вопрос? Это отлично! Возможно ответ на него уже есть в специальном разделе. Если у вас что-то особенное, просто свяжитесь с нами любым из указанных здесь способов.         
+            .col-xs-offset-3.col-xs-9.col-sm-offset-0.col-sm-6.callback__contacts__form
+                input(type='text', placeholder='Оставьте ваш адрес электронной почты').callback__contacts__form-input
+                input(type='text', placeholder='Напишите телефон, если хотите, чтобы мы перезвонили').callback__contacts__form-input
+                input(type='text', placeholder='Представьтесь пожалуйста').callback__contacts__form-input
+                label(for='contacts-form-textarea') Опишите вопрос:
+                textarea#contacts-form-textarea.callback__contacts__form-textarea
+                input(type='button', value="Отправить").callback__form-button.callback__contacts__form-button.btn-white

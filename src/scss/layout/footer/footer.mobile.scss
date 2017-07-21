@@ -1,0 +1,68 @@
+@media screen and (max-width: 768px) {
+.footer {
+    flex-grow: 0;
+}
+.footer {
+	height: 139px;
+	background: #4f4f4f;
+	width: 100%;
+    margin: 0 auto;
+	&__logo {
+		position: relative;
+    	top: 32px;
+	}
+	&__menu {
+		position: relative;
+    	top: 27px;
+    	left: 7px;
+    	width: inherit;
+	}
+	&__contacts {
+		position: relative;
+	    text-align: right;
+	    top: 26px;
+	}
+	&__contacts-phone {
+		color: #fff;
+		font-size: 18px;
+		position: relative;
+		&:before {
+	    	content: "";
+		    background-image: url(../img/phone-footer.png);
+		    display: inline-block;
+		    width: 19px;
+		    height: 19px;
+		    margin-right: 7px;
+		    margin-bottom: -3px;
+	    }
+	}
+	&__contacts-adress {
+		color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    max-width: 150px;
+	}
+	&__contacts-mail {
+		font-size: 14px;
+	    margin-top: 8px;
+	    display: inline-block;
+	    color: #4ca6d9;
+	}
+	&__copy {
+		color: #b8b8b8;
+	    font-size: 12px;
+	    position: relative;
+	    top: 90px;
+	    left: 16px;
+	    max-width: 150px;
+		margin-top: 0;
+	}
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px){
+	.footer__menu {
+			width: unset;
+		}
+}
